@@ -21,7 +21,11 @@
 
 ## Screenshots
 
-> _أضيفي هنا صور من شاشات البرنامج بعد ما تشغّليه (شاشة الترحيب، تسجيل الدخول، مراقبة الأجهزة، التنبيهات، الداشبورد)._
+![Welcome page](Welcome_page.PNG)
+![Log in](Log_in.PNG)
+![Device monitoring](Device_monitoring.PNG)
+![Log alerts and intelligent analysis](log_alerts_and_intelligent_analysis.PNG)
+![Dashboard](Dashboard.PNG)
 
 ## Database Schema
 
@@ -36,7 +40,7 @@ The system uses 6 related tables:
 | `Severity` | severity levels (Low, Medium, High, Critical) with time limits |
 | `Alerts` | logged alerts, linked to device, type, and severity |
 
-Full schema and seed data are in [`sql_كله.txt`](./sql_كله.txt) (or rename to `NetGuard.sql`).
+Full schema and seed data are in [`NetGuard.sql`](./NetGuard.sql).
 
 ## How to Run
 
@@ -59,8 +63,8 @@ NetGuard/
 ├── Form3.cs / .Designer.cs   → Device monitoring
 ├── Form4.cs / .Designer.cs   → Alerts + AI predictive engine
 ├── Form5.cs / .Designer.cs   → Dashboard (charts)
-├── Helpers/Branding.cs       → shared UI branding (icon/background)
-├── Assets/                   → logo & background images
+├── Branding.cs       → shared UI branding (icon/background)
+├── Resources/                   → logo & background images
 └── App.config                → database connection string
 ```
 
