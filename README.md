@@ -24,7 +24,7 @@
 ![Welcome page](Welcome.PNG)
 ![Log in](Log_in.PNG)
 ![Device monitoring](Device_monitoring.PNG)
-![Log alerts and intelligent analysis](log_alerts_and_intelligent_analysis.PNG)
+![Log alerts and intelligent analysis](Log_alerts_and_intelligent_analysis.PNG)
 ![Dashboard](Dashboard.PNG)
 
 ## Database Schema
