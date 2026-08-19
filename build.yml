@@ -1,0 +1,25 @@
+name: Build NetGuard
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore NuGet packages
+      run: nuget restore NetGuard.sln
+      continue-on-error: true
+
+    - name: Build solution
+      run: msbuild NetGuard.sln /p:Configuration=Release /p:Platform="Any CPU"
